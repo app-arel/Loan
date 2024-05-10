@@ -1,0 +1,16 @@
+﻿@model Loan.Models.LoanViewModel
+<!DOCTYPE html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+    <h1>Loan</h1>
+    <form asp-action="Loan" method="post" class="mt-3">
+        <label for="Amount" class="form-label mt-3">Amount</label>
+        <input type="number" name="Amount" asp-for="Amount" placeholder="Input Your Amount" class="form-control" />
+        <label for="Tenure" class="form-label mt-3">Tenure</label>
+        <input type="number" name="Tenure" asp-for="Tenure" placeholder="Input Your Tenure in years" class="form-control" />
+        <button class="btn btn-primary">SUbmit</button>
+    </form>
+    </body>
+    </html>

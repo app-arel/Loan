@@ -1,0 +1,25 @@
+﻿@model Loan.Models.UserViewModel;
+<!DOCTYPE html>
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h1 class="text-center">User Registration</h1>
+    <form asp-action="Register" method="post" class="mt-3">
+        <label for="Name" class="form-label mt-3">Name</label>
+        <input type="text" name="Name" asp-for="Name" placeholder="Input Your Name" class="form-control"/>
+        <label for="Email" class="form-label mt-3">Email</label>
+        <input type="Email" name="Email" asp-for="Email" placeholder="Input Your Email" class="form-control"/>
+        <label for="Phone" class="form-label mt-3">Phone</label>
+        <input type="text" name="Phone" asp-for="Phone" placeholder="Input Your Phone Number" class="form-control" />
+        <label for="BVN" class="form-label mt-3">BVN</label>
+        <input type="text" name="BVN" asp-for="BVN" placeholder="Input Your Bank Verification Number(BVN)" class="form-control" />
+        <label for="Address" class="form-label mt-3">Address</label>
+        <input type="text" name="Address" asp-for="Address" placeholder="Input Your Permanent Address" class="form-control" />
+        <label for="Age" class="form-label mt-3">Age</label>
+        <input type="text" name="Age" asp-for="Age" placeholder="Input Your Current Age(Not Approximate age)" class="form-control" />
+        <button type="submit" class="btn btn-danger mt-5">Submit</button>
+    </form>
+    </body>
+    </html>
